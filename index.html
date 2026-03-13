@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>IP 子網路計算器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🌿 IP 子網路計算器</h1>
+    <p class="subtitle">Ghibli Style Network Tool</p>
+
+    <div class="input-area">
+        <input type="text" id="ip" placeholder="輸入 IP 例如 192.168.1.10">
+        <input type="text" id="mask" placeholder="輸入 /24 或 255.255.255.0">
+        <button onclick="calculate()">計算</button>
+    </div>
+
+    <div class="result">
+        <p>子網路遮罩：<span id="subnet"></span></p>
+        <p>網段名稱：<span id="network"></span></p>
+        <p>廣播位置：<span id="broadcast"></span></p>
+        <p>IP網段範圍：<span id="range"></span></p>
+        <p>可用IP範圍：<span id="usable"></span></p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
